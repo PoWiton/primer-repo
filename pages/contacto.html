@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../assets/img/favicon.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Contacto-powitongaming</title>
+  </head>
+  <body>
+    <!--Comienzo cabecera + NAV-->
+    <header class="navBar">
+      <a title="logo" href="../index.html"><img src="../assets/img/logo.png" alt="fenix violeta con alas abiertas" /></a>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="servtecnico.html">Servicio Tecnico</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li>Contacto</li>
+        </ul>
+      </nav>
+    </header>
+    <!--Fin cabecera + NAV-->
+    <!--Comienza contenido principal-->
+    <main>
+      <section class="container">
+        <article>
+          <form action="#">
+            <fieldset>
+              <legend>Dejanos tu mensaje</legend>
+              <label for="nombre">Nombre:</label>
+              <input type="text" name="nombre" id="nombre" />
+              <label for="Apellido">Apellido:</label>
+              <input type="text" name="Apellido" id="Apellido" />
+              <label for="email">E-mail :</label>
+              <input type="text" name="email" id="email" />
+              <label for="plataforma">Plataforma preferida:</label>
+              <select name="plataforma" id="plataforma">
+                <option value="1">PC</option>
+                <option value="2">PS4</option>
+                <option value="3">PS5</option>
+                <option value="4">Xbox</option>
+              </select>
+              <div>
+                Desea recibir el Newsletter?
+                <input type="checkbox" name="acepta" value="1" />
+              </div>
+              <label id="msgblock" for="mensaje">Escribe un mensaje:</label>
+              <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+              <div class="buttons">
+                <input type="submit" value="Enviar" />
+                <input type="reset" value="Resetear" />
+              </div>
+            </fieldset>
+          </form>
+        </article>
+      </section>
+    </main>
+    <!--Fin contenido principal-->
+    <!-- Comienzo pie de pagina -->
+    <footer>
+      <div class="position">
+        <a title="logo" href="../index.html"><img src="../assets/img/logo.png" alt="fenix violeta con alas abiertas" /></a>
+        <div class="redes">
+          <h3>Seguinos en:</h3>
+          <a title="insta" href="https://www.instagram.com/powiton666/"><img src="../assets/img/insta.png" alt="enlace al instagram de powitongaming" /></a>
+          <a title="twitter" href="https://twitter.com/powiton"><img src="../assets/img/tw.png" alt="enlace al twitter de powitongaming" /></a>
+          <a title="twitch" href="https://twitch.tv/powiton666"><img src="../assets/img/twitch.png" alt="enlace al twitch de powitongaming" /></a>
+        </div>
+        <div class="tienda">
+          <h3>Sobre la tienda:</h3>
+          <a title="ubicacion" href="https://goo.gl/maps/D6Q6Zu9CTR6T1oXn6">
+            <img src="../assets/img/pin.png" alt="enlace a la ubicacion de powitongaming" />Calle Falsa 123 - Avalon</a
+          >
+          <a title="tel" href="https://api.whatsapp.com/send?phone=+5491155239111"
+            ><img src="../assets/img/ws.png" alt="enlace al whatsapp de powitongaming" />011-55239111</a
+          >
+          <a title="e-mail" href="mailto:ventas@powitongaming.com"
+            ><img src="../assets/img/email.png" alt="enlace al mail de ventas de powitongaming" />ventas@powitongaming.com</a
+          >
+        </div>
+      </div>
+    </footer>
+    <!-- FIN pie de pagina -->
+  </body>
+</html>

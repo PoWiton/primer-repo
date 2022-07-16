@@ -1,0 +1,233 @@
+/*Estilos generales*/
+* {
+  margin: 0;
+  padding: 0;
+  /* hago el reset */
+}
+
+html {
+  font-size: 62.5%; /* Aplico el truco para usar la fuente con los rem */
+  font-family: "Lato", sans-serif; /* Uso Lato en todas las paginas  */
+}
+
+.imgcenter {
+  display: block;
+  margin: auto;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /* Centro todas las imagenes de las paginas y redondeo los bordes. */
+}
+
+.container {
+  min-height: calc(100vh - 123px - 113px);
+  /* Me molestaba mucho que el footer no se viera siempre abajo , 
+  cuando la pagina no llegaba a ocupar toda la vista asi que investigue como hacerlo y use esto */
+}
+
+iframe {
+  display: block;
+  margin: auto;
+  border-radius: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  /* centro iframe y redondeo los bordes */
+}
+
+p {
+  color: black;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 30px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  /* estilos para los p */
+}
+
+h2 {
+  font-size: 5rem;
+  color: black;
+  font-style: italic;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  /* estilos de fuentes,color del fondo,margenes y bordes redondeados */
+}
+
+/* Estilos al navigation*/
+nav {
+  position: relative;
+  bottom: 70px;
+  left: 650px;
+  /* acomodo la nav y le doy position relative para que en conjunto con sticky se mueva en el header que tiene el logo */
+}
+
+.navBar {
+  background-color: black;
+  position: sticky;
+  top: 0px;
+  margin-bottom: 15px;
+  /* fondo negro y sticky para poder mover el header con el scroll */
+}
+
+ul {
+  list-style: none;
+  font-size: 0;
+  /* le saco el estilo a la ul y truquito para el inline-block de la nav*/
+}
+
+li {
+  color: white;
+  display: inline-block;
+  width: 15%;
+  position: relative;
+  font-size: 2rem;
+  font-weight: bold;
+  /* cambio color de la fuente,tamaño y estilo , uso inline-block para acomodar la lista de forma horizontal y aplico una separacion entre items */
+}
+
+li a {
+  color: white;
+  /* color blanco a los links de li */
+}
+
+/*Estilos al body */
+body {
+  overflow-x: hidden;
+  background-image: url("../assets/img/matrix.png");
+  /*  fondo de matrix en todas las paginas y oculto el overflow hacia los costados */
+}
+
+/* estilos index */
+h2.news {
+  width: 280px; /* acomodo el ancho */
+}
+
+#pIndex {
+  margin-left: 430px;
+  margin-right: 430px;
+  /* acomodo los margenes para que queden centrados con la imagen para que quede prolijo hasta poder usar flexbox */
+}
+
+p a {
+  color: rgb(21, 78, 21); /* color verde al link del p */
+}
+
+/* Estilos al footer*/
+footer {
+  background-color: black;
+}
+
+.position {
+  width: 100%;
+  height: 100%;
+}
+
+footer div {
+  padding: 5px;
+  display: inline-block;
+  font-size: 2rem;
+  overflow: hidden;
+}
+
+h3 {
+  color: white;
+}
+
+.redes {
+  position: absolute;
+  margin-left: 800px;
+}
+
+.tienda {
+  position: absolute;
+  margin-left: 1100px;
+}
+
+.tienda a {
+  color: white;
+}
+
+/* Estilos productos */
+h2.producto {
+  width: 850px;
+}
+
+.tabla {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  background-color: black;
+  font-size: 3rem;
+  border-radius: 10px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  /* centrado , color , tamaño de la fuente , bordes de la tabla */
+}
+
+/* Estilos para el formulario contacto */
+fieldset {
+  color: white;
+  background-color: black;
+  width: 260px;
+  margin: auto;
+  font-size: 1.5rem;
+  border: 4px solid;
+  border-radius: 5px;
+  /* centrado , color , tamaño de la fuente , bordes del form */
+}
+legend {
+  font-size: 2rem;
+  margin-left: 10px;
+  padding: 2px;
+}
+fieldset label {
+  display: block; /* le doy un display block para separarlo de los inputs */
+  margin-left: 12px; /* margen etiquetas */
+}
+
+fieldset div,
+input,
+select {
+  margin: 12px; /* margen a los div, select y imput */
+}
+
+fieldset textarea {
+  margin-left: 10px; /* margen al text area */
+  border: 3px solid; /* borde solido al text area */
+}
+
+#msgblock {
+  display: block; /* separo el label del textarea */
+}
+
+.buttons {
+  margin-left: 95px;
+
+  /* acomodo los botones */
+}
+
+/* Estilos servicio tecnico */
+h2.servtec {
+  width: 480px; /* acomodo el ancho */
+}
+
+#pServicio {
+  margin-left: 440px;
+  margin-right: 440px;
+}
+
+/* estilos a nosotros */
+h2.about {
+  width: 370px; /* acomodo el ancho */
+}
+
+#pNosotros {
+  margin-left: 230px;
+  margin-right: 230px;
+}
