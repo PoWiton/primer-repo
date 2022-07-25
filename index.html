@@ -12,46 +12,48 @@
     <title>Inicio-powitongaming</title>
   </head>
   <body>
-    <!--Comienzo cabecera + NAV-->
-    <header class="navBar">
-      <a title="logo" href="index.html"><img src="assets/img/logo.png" alt="fenix violeta con alas abiertas" /></a>
-      <nav>
-        <ul>
-          <li><a href="#">Inicio</a></li>
-          <li><a href="pages/productos.html">Productos</a></li>
-          <li><a href="pages/servtecnico.html">Servicio Tecnico</a></li>
-          <li><a href="pages/nosotros.html">Nosotros</a></li>
-          <li><a href="pages/contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
-    </header>
-    <!--Fin cabecera + NAV-->
-    <!--Comienzo contenido principal-->
-    <main>
-      <section>
-        <article>
-          <h2 class="news">Novedades:</h2>
-          <iframe
-            width="1024"
-            height="768"
-            src="https://www.youtube.com/embed/Wn1eSAEbfls"
-            title="Teenage Mutant Ninja Turtles: Shredder’s Revenge - Official Launch Trailer"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-          <p id="pIndex">
-            Las Tortugas Ninjas vuelven por la puerta grande, de la mano de los creadores de street of rage 4 , nos entregan este Beat-em-Up de la vieja
-            escuela; y logicamente te lo traemos al mejor precio
-            <a href="pages/productos.html">ACA!</a>
-          </p>
-        </article>
-      </section>
-    </main>
-    <!-- FIN contenido principal -->
-    <!-- Comienzo pie de pagina -->
-    <footer>
-      <div class="position">
+    <div class="gridContainer">
+      <!--Comienzo cabecera + NAV-->
+      <header class="navBar">
+        <a title="logo" href="index.html"><img src="assets/img/logo.png" alt="fenix violeta con alas abiertas" /></a>
+        <nav>
+          <ul class="navContainer">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="pages/productos.html">Productos</a></li>
+            <li><a href="pages/servtecnico.html">Servicio Tecnico</a></li>
+            <li><a href="pages/nosotros.html">Nosotros</a></li>
+            <li><a href="pages/contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </header>
+      <!--Fin cabecera + NAV-->
+      <!--Comienzo contenido principal-->
+      <main>
+        <section>
+          <article>
+            <h2 class="news">Novedades:</h2>
+            <div class="embed-container">
+              <iframe
+                width="1024"
+                height="768"
+                src="https://www.youtube.com/embed/Wn1eSAEbfls"
+                title="Teenage Mutant Ninja Turtles: Shredder’s Revenge - Official Launch Trailer"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <p id="pIndex">
+              Las Tortugas Ninjas vuelven por la puerta grande, de la mano de los creadores de street of rage 4 , nos entregan este Beat-em-Up de la vieja
+              escuela; y logicamente te lo traemos al mejor precio
+              <a href="pages/productos.html">ACA!</a>
+            </p>
+          </article>
+        </section>
+      </main>
+      <!-- FIN contenido principal -->
+      <!-- Comienzo pie de pagina -->
+      <footer class="flexContainer">
         <a title="logo" href="index.html"><img src="assets/img/logo.png" alt="fenix violeta con alas abiertas" /></a>
         <div class="redes">
           <h3>Seguinos en:</h3>
@@ -71,8 +73,8 @@
             ><img src="assets/img/email.png" alt="enlace al mail de ventas de powitongaming" />ventas@powitongaming.com</a
           >
         </div>
-      </div>
-    </footer>
-    <!-- FIN pie de pagina -->
+      </footer>
+      <!-- FIN pie de pagina -->
+    </div>
   </body>
 </html>

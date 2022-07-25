@@ -4,27 +4,24 @@
   padding: 0;
   /* hago el reset */
 }
-header {
-  height: 100px;
-}
+
 html {
   font-size: 62.5%; /* Aplico el truco para usar la fuente con los rem */
   font-family: "Lato", sans-serif; /* Uso Lato en todas las paginas  */
 }
-.border {
-  border: 1px solid rgb(248, 104, 7);
-}
+
 .imgcenter {
   display: block;
   margin: auto;
   border-radius: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  width: 85%;
+  height: auto;
+
   /* Centro todas las imagenes de las paginas y redondeo los bordes. */
 }
 
 .container {
-  min-height: calc(100vh - 123px - 113px);
+  min-height: calc(100vh - 150px - 150px);
   /* Me molestaba mucho que el footer no se viera siempre abajo , 
   cuando la pagina no llegaba a ocupar toda la vista asi que investigue como hacerlo y use esto */
 }
@@ -35,30 +32,27 @@ iframe {
   border-radius: 20px;
   margin-top: 15px;
   margin-bottom: 15px;
+  width: 85%;
+
   /* centro iframe y redondeo los bordes */
 }
 
 p {
-  color: black;
+  color: white;
   text-align: center;
   font-size: 2rem;
   line-height: 30px;
-  background-color: rgba(255, 255, 255, 0.7);
-  border-radius: 20px;
-  margin-top: 15px;
-  margin-bottom: 15px;
+
   /* estilos para los p */
 }
 
 h2 {
   font-size: 5rem;
-  color: black;
+  color: white;
   font-style: italic;
   font-weight: bold;
-  background-color: rgba(255, 255, 255, 0.7);
   border-radius: 20px;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
   /* estilos de fuentes,color del fondo,margenes y bordes redondeados */
 }
 
@@ -68,16 +62,16 @@ h2 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  position: relative;
   background-color: black;
-  position: sticky;
   top: 0px;
   margin-bottom: 15px;
   align-items: center;
+
   /* fondo negro y sticky para poder mover el header con el scroll */
 }
 .navContainer {
-  width: 1000px;
+  display: block;
+  text-align: center;
 }
 ul {
   list-style: none;
@@ -90,8 +84,9 @@ li {
   display: inline-block;
   width: 20%;
   position: relative;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: bold;
+
   /* cambio color de la fuente,tamaño y estilo , uso inline-block para acomodar la lista de forma horizontal y aplico una separacion entre items */
 }
 
@@ -103,19 +98,13 @@ li a {
 /*Estilos al body */
 body {
   overflow-x: hidden;
-  background-image: url("../assets/img/matrix.png");
+  background-color: rgb(39, 39, 39);
   /*  fondo de matrix en todas las paginas y oculto el overflow hacia los costados */
 }
 
 /* estilos index */
 h2.news {
-  width: 280px; /* acomodo el ancho */
-}
-
-#pIndex {
-  margin-left: 430px;
-  margin-right: 430px;
-  /* acomodo los margenes para que queden centrados con la imagen para que quede prolijo hasta poder usar flexbox */
+  text-align: center;
 }
 
 p a {
@@ -139,13 +128,6 @@ footer div {
   overflow: hidden;
 }
 
-.redes {
-  margin-left: 450px;
-}
-
-.tienda {
-}
-
 .tienda a {
   color: white;
 }
@@ -153,9 +135,6 @@ h3 {
   color: white;
 }
 /* Estilos productos */
-h2.producto {
-  width: 850px;
-}
 
 .tabla {
   display: table;
@@ -212,22 +191,124 @@ fieldset textarea {
   /* acomodo los botones */
 }
 
-/* Estilos servicio tecnico */
-h2.servtec {
-  width: 480px; /* acomodo el ancho */
-}
+/* vista desktop */
+@media only screen and (min-width: 1024px) {
+  .gridContainer {
+    display: grid;
+    grid-template-areas:
+      "logo"
+      "main"
+      "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    width: 100%;
+  }
 
-#pServicio {
-  margin-left: 440px;
-  margin-right: 440px;
-}
+  header {
+    grid-area: logo;
+  }
 
-/* estilos a nosotros */
-h2.about {
-  width: 370px; /* acomodo el ancho */
+  footer {
+    grid-area: footer;
+  }
 }
+/* vista tablet */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .gridContainer {
+    display: grid;
+    grid-template-areas:
+      "logo"
+      "main"
+      "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    width: 100%;
+  }
 
-#pNosotros {
-  margin-left: 230px;
-  margin-right: 230px;
+  header {
+    grid-area: logo;
+  }
+
+  footer {
+    grid-area: footer;
+  }
+  p {
+    font-size: 1.5rem;
+    line-height: 15px;
+
+    /* estilos para los p */
+  }
+  h2 {
+    font-size: 3rem;
+
+    /* estilos de fuentes,color del fondo,margenes y bordes redondeados */
+  }
+}
+/* Vista mobile */
+@media only screen and (max-width: 767px) {
+  .gridContainer {
+    display: grid;
+    grid-template-areas:
+      "logo"
+      "main"
+      "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    width: 100%;
+  }
+
+  .navContainer {
+    grid-area: navBar;
+  }
+
+  header {
+    grid-area: logo;
+  }
+
+  footer {
+    grid-area: footer;
+  }
+  .flexContainer {
+    flex-direction: column;
+    justify-content: center;
+  }
+  h2 {
+    font-size: 2rem;
+
+    /* estilos de fuentes,color del fondo,margenes y bordes redondeados */
+  }
+  p {
+    font-size: 1rem;
+    line-height: 15px;
+
+    /* estilos para los p */
+  }
+
+  .navBar {
+    display: flex;
+    flex-direction: column;
+  }
+  .navContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  li {
+    font-size: 1.3rem;
+
+    /* cambio color de la fuente,tamaño y estilo , uso inline-block para acomodar la lista de forma horizontal y aplico una separacion entre items */
+  }
+  .embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+  }
+  .embed-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 }

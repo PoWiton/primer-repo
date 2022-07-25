@@ -10,60 +10,61 @@
     <title>Contacto-powitongaming</title>
   </head>
   <body>
-    <!--Comienzo cabecera + NAV-->
-    <header class="navBar">
-      <a title="logo" href="../index.html"><img src="../assets/img/logo.png" alt="fenix violeta con alas abiertas" /></a>
-      <nav>
-        <ul>
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="productos.html">Productos</a></li>
-          <li><a href="servtecnico.html">Servicio Tecnico</a></li>
-          <li><a href="nosotros.html">Nosotros</a></li>
-          <li><a href="#">Contacto</a></li>
-        </ul>
-      </nav>
-    </header>
-    <!--Fin cabecera + NAV-->
-    <!--Comienza contenido principal-->
-    <main>
-      <section class="container">
-        <article>
-          <form action="#">
-            <fieldset>
-              <legend>Dejanos tu mensaje</legend>
-              <label for="nombre">Nombre:</label>
-              <input type="text" name="nombre" id="nombre" />
-              <label for="Apellido">Apellido:</label>
-              <input type="text" name="Apellido" id="Apellido" />
-              <label for="email">E-mail :</label>
-              <input type="text" name="email" id="email" />
-              <label for="plataforma">Plataforma preferida:</label>
-              <select name="plataforma" id="plataforma">
-                <option value="1">PC</option>
-                <option value="2">PS4</option>
-                <option value="3">PS5</option>
-                <option value="4">Xbox</option>
-              </select>
-              <div>
-                Desea recibir el Newsletter?
-                <input type="checkbox" name="acepta" value="1" />
-              </div>
-              <label id="msgblock" for="mensaje">Escribe un mensaje:</label>
-              <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
-              <div class="buttons">
-                <input type="submit" value="Enviar" />
-                <input type="reset" value="Resetear" />
-              </div>
-            </fieldset>
-          </form>
-        </article>
-      </section>
-    </main>
-    <!--Fin contenido principal-->
-    <!-- Comienzo pie de pagina -->
-    <footer>
-      <div class="position">
+    <div class="gridContainer">
+      <!--Comienzo cabecera + NAV-->
+      <header class="navBar">
         <a title="logo" href="../index.html"><img src="../assets/img/logo.png" alt="fenix violeta con alas abiertas" /></a>
+        <nav>
+          <ul class="navContainer">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="servtecnico.html">Servicio Tecnico</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </nav>
+      </header>
+      <!--Fin cabecera + NAV-->
+      <!--Comienza contenido principal-->
+      <main>
+        <section class="container">
+          <article>
+            <form action="#">
+              <fieldset>
+                <legend>Dejanos tu mensaje</legend>
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" />
+                <label for="Apellido">Apellido:</label>
+                <input type="text" name="Apellido" id="Apellido" />
+                <label for="email">E-mail :</label>
+                <input type="text" name="email" id="email" />
+                <label for="plataforma">Plataforma preferida:</label>
+                <select name="plataforma" id="plataforma">
+                  <option value="1">PC</option>
+                  <option value="2">PS4</option>
+                  <option value="3">PS5</option>
+                  <option value="4">Xbox</option>
+                </select>
+                <div>
+                  Desea recibir el Newsletter?
+                  <input type="checkbox" name="acepta" value="1" />
+                </div>
+                <label id="msgblock" for="mensaje">Escribe un mensaje:</label>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+                <div class="buttons">
+                  <input type="submit" value="Enviar" />
+                  <input type="reset" value="Resetear" />
+                </div>
+              </fieldset>
+            </form>
+          </article>
+        </section>
+      </main>
+      <!--Fin contenido principal-->
+      <!-- Comienzo pie de pagina -->
+      <footer class="flexContainer">
+        <a title="logo" href="../index.html"><img src="../assets/img/logo.png" alt="fenix violeta con alas abiertas" /></a>
+
         <div class="redes">
           <h3>Seguinos en:</h3>
           <a title="insta" href="https://www.instagram.com/powiton666/"><img src="../assets/img/insta.png" alt="enlace al instagram de powitongaming" /></a>
@@ -82,8 +83,8 @@
             ><img src="../assets/img/email.png" alt="enlace al mail de ventas de powitongaming" />ventas@powitongaming.com</a
           >
         </div>
-      </div>
-    </footer>
-    <!-- FIN pie de pagina -->
+      </footer>
+      <!-- FIN pie de pagina -->
+    </div>
   </body>
 </html>
