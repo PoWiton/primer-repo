@@ -19,18 +19,35 @@
     <title>Inicio-powitongaming</title>
   </head>
   <body>
-    <div class="gridContainer">
+    <div class="container-fluid">
       <!--Comienzo cabecera + NAV-->
-      <header class="navBar">
-        <a title="logo" href="index.html"><img class="saturar" src="assets/img/logo.png" alt="fenix violeta con alas abiertas" /></a>
-        <nav>
-          <ul class="navContainer">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="pages/productos.html">Productos</a></li>
-            <li><a href="pages/servtecnico.html">Servicio Tecnico</a></li>
-            <li><a href="pages/nosotros.html">Nosotros</a></li>
-            <li><a href="pages/contacto.html">Contacto</a></li>
-          </ul>
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark bgColor">
+          <div class="container-fluid">
+            <a title="logo" href="index.html"><img class="saturar" src="assets/img/logo.png" alt="fenix violeta con alas abiertas" /></a>
+            <button
+              class="navbar-toggler btn btn-outline-success bordeBoton"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-lg-0 display-6 separarPalabras">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="pages/productos.html">Productos</a></li>
+                <li class="nav-item"><a class="nav-link" href="pages/servtecnico.html">Servicio Tecnico</a></li>
+                <li class="nav-item"><a class="nav-link" href="pages/nosotros.html">Nosotros</a></li>
+                <li class="nav-item"><a class="nav-link" href="pages/contacto.html">Contacto</a></li>
+              </ul>
+            </div>
+          </div>
         </nav>
       </header>
       <!--Fin cabecera + NAV-->
@@ -38,23 +55,63 @@
       <main>
         <section>
           <article>
-            <h2 class="news">Novedades:</h2>
-            <div class="embed-container">
-              <iframe
-                width="1024"
-                height="768"
-                src="https://www.youtube.com/embed/Wn1eSAEbfls"
-                title="Teenage Mutant Ninja Turtles: Shredder’s Revenge - Official Launch Trailer"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
+            <h2 class="display-1 text-white my-4 text-center"><span>Novedades:</span></h2>
+            <div class="container">
+              <div id="carouselExampleControls" class="carousel slide" data-bs-interval="false">
+                <div class="carousel-inner">
+                  <div class="carousel-item active ratio ratio-16x9">
+                    <iframe
+                      width="560"
+                      height="315"
+                      src="https://www.youtube.com/embed/Wn1eSAEbfls"
+                      title="Teenage Mutant Ninja Turtles: Shredder’s Revenge - Official Launch Trailer"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                  <div class="carousel-item ratio ratio-16x9">
+                    <iframe
+                      width="560"
+                      height="315"
+                      src="https://www.youtube.com/embed/CptaXqVY6-E"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                  <div class="carousel-item ratio ratio-16x9">
+                    <iframe
+                      width="560"
+                      height="315"
+                      src="https://www.youtube.com/embed/TcyuEey8RMc"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+                <button class="carousel-control-prev colorFlecha" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next colorFlecha" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <p class="fs-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, dolores ducimus. Saepe, velit? Consequuntur aspernatur exercitationem cumque
+                ad dolorem recusandae ipsam minima, vero atque cum et dicta quibusdam deserunt architecto enim illo quo nesciunt sapiente dolore corrupti
+                accusantium libero? Iste iure dolorem magni minima accusantium repudiandae earum eaque? Natus, corrupti similique voluptatum expedita beatae
+                delectus placeat reiciendis! Blanditiis est odio laudantium harum facere tempora necessitatibus dolor. Vel rem voluptates a totam odit magnam
+                quasi repellat iste aliquid aperiam deserunt maiores numquam nostrum eaque error porro accusantium voluptatum corrupti obcaecati, quae
+                reiciendis? Quas delectus minus odio sapiente esse at sit odit.
+                <a class="link" href="pages/productos.html">ACA!</a>
+              </p>
             </div>
-            <p id="pIndex">
-              Las Tortugas Ninjas vuelven por la puerta grande, de la mano de los creadores de street of rage 4 , nos entregan este Beat-em-Up de la vieja
-              escuela; y logicamente te lo traemos al mejor precio
-              <a class="link" href="pages/productos.html">ACA!</a>
-            </p>
           </article>
         </section>
       </main>
