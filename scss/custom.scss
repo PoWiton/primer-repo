@@ -1,0 +1,79 @@
+@import "resets";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import "variables";
+@import "mixins";
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+body {
+  background: linear-gradient(to right, rgb(39, 39, 39), #464444);
+}
+p {
+  color: $white;
+}
+h2 {
+  color: $white;
+  font: {
+    family: verdana;
+    weight: bold;
+    size: 1em;
+  }
+}
+ul {
+  text-indent: 28pt;
+  font: {
+    size: 1.3em;
+  }
+}
+
+h3 {
+  color: $white;
+  font: {
+    weight: bold;
+    size: 1em;
+  }
+}
+.rotate:hover {
+  animation: rotation 3s infinite linear;
+}
+footer {
+  div.row {
+    background: black;
+    div a {
+      &:hover {
+        zoom: 1.2;
+      }
+    }
+  }
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+.saturar {
+  animation: saturate 3s infinite linear;
+}
+@keyframes saturate {
+  from {
+    filter: saturate(50%);
+  }
+  to {
+    filter: saturate(180%);
+  }
+}
+/* efecto titulos */
+h2 span {
+  animation: cajaH2 3s infinite linear;
+  border-radius: 10px;
+}
+@keyframes cajaH2 {
+  from {
+    background-color: rgb(39, 39, 39);
+  }
+  to {
+    background-color: #464444;
+  }
+}
