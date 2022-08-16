@@ -1,0 +1,111 @@
+body {
+  background: linear-gradient(to right, rgb(39, 39, 39), #464444);
+}
+
+p {
+  color: $white;
+  &:hover {
+    font-weight: map-get($font-weights, bold);
+  }
+}
+/* uso extend en los heading */
+
+%heading {
+  color: $white;
+  font: {
+    family: verdana;
+    size: 2em;
+  }
+}
+
+h1 {
+  @extend %heading;
+  font-size: 3em;
+  font-weight: map-get($font-weights, regular);
+}
+
+h2 {
+  @extend %heading;
+  font-weight: map-get($font-weights, bold);
+}
+
+h3 {
+  @extend %heading;
+  font-size: 1.5em;
+  font-weight: map-get($font-weights, bold);
+}
+
+ul {
+  text-indent: 28pt;
+  font: {
+    size: 1.3em;
+  }
+}
+
+.rotate:hover {
+  animation: rotation 3s infinite linear;
+}
+
+footer {
+  .row {
+    background: black;
+    a {
+      &:hover {
+        zoom: 1.2;
+      }
+    }
+  }
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.saturar {
+  animation: saturate 3s infinite linear;
+}
+
+@keyframes saturate {
+  from {
+    filter: saturate(50%);
+  }
+  to {
+    filter: saturate(180%);
+  }
+}
+
+/* efecto titulos */
+span {
+  animation: cajaH2 3s infinite linear;
+  border-radius: 10px;
+}
+
+@keyframes cajaH2 {
+  from {
+    background-color: rgb(39, 39, 39);
+  }
+  to {
+    background-color: #464444;
+  }
+}
+
+/* Uso el mixin en los botones del form de contacto */
+form {
+  .acepta {
+    @include efecto3d(grey);
+    &:hover {
+      @include efecto3d(green);
+    }
+  }
+  .reset {
+    @extend .acepta;
+    &:hover {
+      @include efecto3d(red);
+    }
+  }
+}
