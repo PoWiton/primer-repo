@@ -1,0 +1,295 @@
+/*Estilos generales*/
+* {
+  margin: 0;
+  padding: 0;
+  /* hago el reset */
+}
+
+html {
+  font-size: 62.5%; /* Aplico el truco para usar la fuente con los rem */
+  font-family: "Lato", sans-serif; /* Uso Lato en todas las paginas  */
+}
+
+/* .imgcenter {
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 20px;
+  width: 85%;
+  height: auto;
+ */
+/* Centro todas las imagenes de las paginas y redondeo los bordes. */
+/* } */
+
+/* .container {
+  min-height: calc(100vh - 150px - 150px);
+  /* Me molestaba mucho que el footer no se viera siempre abajo , 
+  cuando la pagina no llegaba a ocupar toda la vista asi que investigue como hacerlo y use esto */
+
+/* iframe {
+  display: block;
+  margin: auto;
+  border-radius: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px; */
+
+/* centro iframe y redondeo los bordes */
+/* } */
+div p {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  color: white;
+}
+/* p { */
+/* text-align: center;
+  font-size: 2rem;
+  line-height: 30px;
+  margin-top: 100px;
+  margin-bottom: 100px; */
+
+/* estilos para los p */
+/* } */
+/* h2 {
+  color: white;
+  font-weight: bold;
+  border-radius: 20px;
+  text-align: center;
+ */
+/* estilos de fuentes,color del fondo,margenes y bordes redondeados */
+/* } */
+
+/* color y fondo navigation */
+nav.bgColor {
+  background: linear-gradient(to right, rgb(39, 39, 39), #464444);
+}
+button.bordeBoton {
+  border: solid 2px white;
+}
+ul.separarPalabras {
+  text-indent: 28pt;
+}
+/*Estilos al body */
+body {
+  overflow-x: hidden;
+  background: linear-gradient(to right, rgb(39, 39, 39), #464444);
+  /*  fondo de matrix en todas las paginas y oculto el overflow hacia los costados */
+}
+
+/* estilos index */
+
+button.colorFlecha {
+  zoom: 4;
+}
+/* h2.news {
+  text-align: center;
+} */
+
+p a {
+  color: rgb(21, 78, 21); /* color verde al link del p */
+}
+
+/* Estilos al footer*/
+/* footer {
+  
+} */
+.flexContainer {
+  display: flex;
+  background: linear-gradient(to right, rgb(39, 39, 39), #464444);
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer div {
+  font-size: 1.8rem;
+  overflow: hidden;
+}
+
+.tienda a {
+  color: white;
+}
+h3 {
+  color: white;
+}
+/* Estilos productos */
+
+/* .tabla {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  background-color: black;
+  font-size: 3rem;
+  border-radius: 10px;
+  margin-top: 40px;
+  margin-bottom: 40px; */
+/* centrado , color , tamaño de la fuente , bordes de la tabla */
+/* } */
+
+/* Estilos para el formulario contacto */
+/* fieldset { */
+/* color: white; */
+/*  background-color: black; */
+/* width: 260px;
+  margin: auto;
+  margin-top: 70px;
+  margin-bottom: 100px;
+  font-size: 2rem;
+  border: 4px solid white;
+  border-radius: 5px; */
+/* centrado , color , tamaño de la fuente , bordes del form */
+/* } */
+/* legend {
+  font-size: 2rem;
+  margin-left: 10px;
+  padding: 2px; */
+/* } */
+/* fieldset label {
+  display: block; 
+  margin-left: 12px; 
+} */
+
+/* fieldset div,
+input,
+select {
+  margin: 12px; 
+} */
+
+/* fieldset textarea {
+  margin-left: 10px; 
+  border: 3px solid; 
+} */
+
+/* #msgblock {
+  display: block; 
+} */
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 70px;
+}
+/* .abs-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+} */
+
+/* .embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+.embed-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+} */
+/* Vista mobile */
+@media only screen and (max-width: 767px) {
+  .gridContainer {
+    display: grid;
+    grid-template-areas:
+      "logo"
+      "main"
+      "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    width: 100%;
+  }
+
+  header {
+    grid-area: logo;
+  }
+
+  footer {
+    grid-area: footer;
+  }
+  .flexContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  div.tienda {
+    text-align: center;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+}
+/* Animaciones  */
+
+/* botones contacto */
+/* .efectoBoton input {
+  background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(75, 76, 78) 100%);
+  width: 70px;
+  height: 30px;
+  line-height: 15px;
+  padding: 0;
+  border: none;
+}
+
+.efectoBoton input:hover {
+  background: transparent;
+  box-shadow: none;
+  color: white;
+  border: solid 2px rgb(255, 255, 255);
+} */
+/* redondeo imagenes */
+.imgcenter:hover {
+  border-radius: 50%;
+  box-shadow: 0px 0px 15px 15px #3946b8;
+}
+/* rotaciones redes y tienda */
+.rotate:hover {
+  animation: rotation 3s infinite linear;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+/* efecto logo */
+.saturar {
+  animation: saturate 3s infinite linear;
+}
+@keyframes saturate {
+  from {
+    filter: saturate(50%);
+  }
+  to {
+    filter: saturate(180%);
+  }
+}
+/* efecto titulos */
+h2 span {
+  animation: cajaH2 3s infinite linear;
+  border-radius: 10px;
+}
+@keyframes cajaH2 {
+  from {
+    background-color: rgb(39, 39, 39);
+  }
+  to {
+    background-color: #464444;
+  }
+}
+/* efecto link */
+.link {
+  animation: linke 3s infinite linear;
+}
+@keyframes linke {
+  from {
+    color: #a0c43e;
+  }
+  to {
+    color: #30d31b;
+  }
+}
